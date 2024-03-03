@@ -1,0 +1,990 @@
+#include<stdio.h>
+#include<string.h>
+// #include<ctype.h>
+int i,j;
+
+void tick_tac_to(){
+    int  A1,A2,A3,A4,A5,A6,A7,A8,A9,B1,B2,B3
+,B4,B5,B6,B7,B8,B9,f_player1,C1,C2,C3,C4,C5,C6,C7,C8,
+C9,s_player1,D1,D2,D3,D4,D5,D6,D7,D8,D9,E1,E2,E3,E4,E5,
+E6,E7,E8,E9;
+      for(i=0;i<=9;i++){
+        for(j=0;j<=9;j++){
+        if(i==3||i==6){
+            printf("_");
+        }
+        if(j==1&&i==1){
+            printf("10=%d",A1);
+        }
+         if(j==4&&i==1){
+            printf("11=%d",A2);
+        }
+         if(j==7&&i==1){
+            printf("12=%d",A3);
+        }
+         if(j==1&&i==4){
+            printf("13=%d",A4);
+        }
+         if(j==4&&i==4){
+            printf("14=%d",A5);
+        }
+         if(j==7&&i==4){
+            printf("15=%d",A6);
+        }
+         if(j==1&&i==7){
+            printf("16=%d",A7);
+        }
+         if(j==4&&i==7){
+            printf("17=%d",A8);
+        }
+         if(j==7&&i==7){
+            printf("18=%d",A9);
+        }
+        if(j==3||j==6){
+            printf("|");
+        }
+        else{
+            printf("\t");
+        }
+        }
+        printf("\n");
+    }
+     if(j==1&&i==1){
+            printf("10");
+        }
+         if(j==4&&i==1){
+            printf("11");
+        }
+         if(j==7&&i==1){
+            printf("12");
+        }
+         if(j==1&&i==4){
+            printf("13");
+        }
+         if(j==4&&i==4){
+            printf("14");
+        }
+         if(j==7&&i==4){
+            printf("15");
+        }
+         if(j==1&&i==7){
+            printf("16");
+        }
+         if(j==4&&i==7){
+            printf("17");
+        }
+         if(j==7&&i==7){
+            printf("18");
+        }
+
+printf("first players turn");
+scanf("%d",&f_player1);
+if(f_player1==10){
+    A1=1;
+}
+if(f_player1==11){
+    A2=1;
+}
+if(f_player1==12){
+    A3=1;
+}
+if(f_player1==13){
+    A4=1;
+}
+if(f_player1==14){
+    A5=1;
+}
+if(f_player1==15){
+    A6=1;
+}if(f_player1==16){
+    A7=1;
+}
+if(f_player1==17){
+    A8=1;
+}
+if(f_player1==18){
+    A9=1;
+}
+printf("second players turn");
+scanf("%d",&s_player1);
+if(s_player1==10){
+    A1=2;
+}
+if(s_player1==11){
+    A2=2;
+}
+if(s_player1==12){
+    A3=2;
+}
+if(s_player1==13){
+    A4=2;
+}
+if(s_player1==14){
+    A5=2;
+}
+if(s_player1==15){
+    A6=2;
+}if(s_player1==16){
+    A7=2;
+}
+if(s_player1==17){
+    A8=2;
+}
+if(s_player1==18){
+    A9=2;
+}
+
+       for(i=0;i<=9;i++){
+        for(j=0;j<=9;j++){
+        if(i==3||i==6){
+            printf("_");
+        }
+        if(j==1&&i==1){
+            printf("10=%d",A1);
+        }
+         if(j==4&&i==1){
+            printf("11=%d",A2);
+        }
+         if(j==7&&i==1){
+            printf("12=%d",A3);
+        }
+         if(j==1&&i==4){
+            printf("13=%d",A4);
+        }
+         if(j==4&&i==4){
+            printf("14=%d",A5);
+        }
+         if(j==7&&i==4){
+            printf("15=%d",A6);
+        }
+         if(j==1&&i==7){
+            printf("16=%d",A7);
+        }
+         if(j==4&&i==7){
+            printf("17=%d",A8);
+        }
+         if(j==7&&i==7){
+            printf("18=%d",A9);
+        }
+        if(j==3||j==6){
+            printf("|");
+        }
+        else{
+            printf("\t");
+        }
+        }
+        printf("\n");
+    }
+if(A1!=0){
+    B1=A1;
+}
+if(A2!=0){
+    B2=A2;
+}
+if(A3!=0){
+    B3=A3;
+}
+if(A4!=0){
+    B4=A4;
+}
+if(A5!=0){
+    B5=A5;
+}
+if(A6!=0){
+    B6=A6;
+}
+if(A7!=0){
+    B7=A7;
+}
+if(A8!=0){
+    B8=A8;
+}
+if(A9!=0){
+    B9=A9;
+}
+        printf("first players turn");
+scanf("%d",&f_player1);
+if(f_player1==10){
+    B1=1;
+}
+if(f_player1==11){
+    B2=1;
+}
+if(f_player1==12){
+    B3=1;
+}
+if(f_player1==13){
+    B4=1;
+}
+if(f_player1==14){
+    B5=1;
+}
+if(f_player1==15){
+    B6=1;
+}if(f_player1==16){
+    B7=1;
+}
+if(f_player1==17){
+    B8=1;
+}
+if(f_player1==18){
+    B9=1;
+}
+printf("second players turn");
+scanf("%d",&s_player1);
+if(s_player1==10){
+    B1=2;
+}
+if(s_player1==11){
+    B2=2;
+}
+if(s_player1==12){
+    B3=2;
+}
+if(s_player1==13){
+    B4=2;
+}
+if(s_player1==14){
+    B5=2;
+}
+if(s_player1==15){
+    B6=2;
+}if(s_player1==16){
+    B7=2;
+}
+if(s_player1==17){
+    B8=2;
+}
+if(s_player1==18){
+    B9=2;
+}
+
+       for(i=0;i<=9;i++){
+        for(j=0;j<=9;j++){
+        if(i==3||i==6){
+            printf("_");
+        }
+        if(j==1&&i==1){
+            printf("10=%d",B1);
+        }
+         if(j==4&&i==1){
+            printf("11=%d",B2);
+        }
+         if(j==7&&i==1){
+            printf("12=%d",B3);
+        }
+         if(j==1&&i==4){
+            printf("13=%d",B4);
+        }
+         if(j==4&&i==4){
+            printf("14=%d",B5);
+        }
+         if(j==7&&i==4){
+            printf("15=%d",B6);
+        }
+         if(j==1&&i==7){
+            printf("16=%d",B7);
+        }
+         if(j==4&&i==7){
+            printf("17=%d",B8);
+        }
+         if(j==7&&i==7){
+            printf("18=%d",B9);
+        }
+        if(j==3||j==6){
+            printf("|");
+        }
+        else{
+            printf("\t");
+        }
+        }
+        printf("\n");
+    }
+    if(B1!=0){
+    C1=B1;
+}
+if(B2!=0){
+    C2=B2;
+}
+if(B3!=0){
+    C3=B3;
+}
+if(B4!=0){
+    C4=B4;
+}
+if(B5!=0){
+    C5=B5;
+}
+if(B6!=0){
+    C6=B6;
+}
+if(B7!=0){
+    C7=B7;
+}
+if(B8!=0){
+    C8=B8;
+}
+if(B9!=0){
+    C9=B9;
+}
+        printf("first players turn");
+scanf("%d",&f_player1);
+if(f_player1==10){
+    C1=1;
+}
+if(f_player1==11){
+    C2=1;
+}
+if(f_player1==12){
+    C3=1;
+}
+if(f_player1==13){
+    C4=1;
+}
+if(f_player1==14){
+    C5=1;
+}
+if(f_player1==15){
+    C6=1;
+}if(f_player1==16){
+    C7=1;
+}
+if(f_player1==17){
+    C8=1;
+}
+if(f_player1==18){
+    C9=1;
+}
+ if(C1==1&&C2==1&&C3==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C4==1&&C5==1&&C5==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C7==1&&C8==1&&C9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C1==1&&C4==1&&C7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C2==1&&C5==1&&C8==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C3==2&&C6==2&&C9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C1==2&&C2==2&&C3==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C4==2&&C5==2&&C5==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C7==2&&C8==2&&C9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C1==2&&C4==2&&C7==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C2==2&&C5==2&&C8==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C3==2&&C6==2&&C9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C1==1&&C5==1&&C9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C3==1&&C5==1&&C7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C1==2&&C5==2&C9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C3==2&&C5==2&&C7==2){
+    printf("player 2 won");
+    goto end;
+}
+
+printf("second players turn");
+scanf("%d",&s_player1);
+if(s_player1==10){
+    C1=2;
+}
+if(s_player1==11){
+    C2=2;
+}
+if(s_player1==12){
+    C3=2;
+}
+if(s_player1==13){
+    C4=2;
+}
+if(s_player1==14){
+    C5=2;
+}
+if(s_player1==15){
+    C6=2;
+}if(s_player1==16){
+    C7=2;
+}
+if(s_player1==17){
+    C8=2;
+}
+if(s_player1==18){
+    C9=2;
+}
+if(B1!=0){
+    C1=B1;
+}
+
+       for(i=0;i<=9;i++){
+        for(j=0;j<=9;j++){
+        if(i==3||i==6){
+            printf("_");
+        }
+        if(j==1&&i==1){
+            printf("10=%d",C1);
+        }
+         if(j==4&&i==1){
+            printf("11=%d",C2);
+        }
+         if(j==7&&i==1){
+            printf("12=%d",C3);
+        }
+         if(j==1&&i==4){
+            printf("13=%d",C4);
+        }
+         if(j==4&&i==4){
+            printf("14=%d",C5);
+        }
+         if(j==7&&i==4){
+            printf("15=%d",C6);
+        }
+         if(j==1&&i==7){
+            printf("16=%d",C7);
+        }
+         if(j==4&&i==7){
+            printf("17=%d",C8);
+        }
+         if(j==7&&i==7){
+            printf("18=%d",C9);
+        }
+        if(j==3||j==6){
+            printf("|");
+        }
+        else{
+            printf("\t");
+        }
+        }
+        printf("\n");
+    }
+    if(C1==1&&C2==1&&C3==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C4==1&&C5==1&&C5==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C7==1&&C8==1&&C9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C1==1&&C4==1&&C7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C2==1&&C5==1&&C8==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C3==2&&C6==2&&C9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C1==2&&C2==2&&C3==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C4==2&&C5==2&&C5==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C7==2&&C8==2&&C9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C1==2&&C4==2&&C7==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C2==2&&C5==2&&C8==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C3==2&&C6==2&&C9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C1==1&&C5==1&&C9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C3==1&&C5==1&&C7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(C1==2&&C5==2&C9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(C3==2&&C5==2&&C7==2){
+    printf("player 2 won");
+    goto end;
+}
+      if(C1!=0){
+    D1=C1;
+}
+if(C2!=0){
+    D2=C2;
+}
+if(C3!=0){
+    D3=C3;
+}
+if(C4!=0){
+    D4=C4;
+}
+if(C5!=0){
+    D5=C5;
+}
+if(C6!=0){
+    D6=C6;
+}
+if(C7!=0){
+    D7=C7;
+}
+if(C8!=0){
+    D8=C8;
+}
+if(C9!=0){
+    D9=C9;
+}
+        printf("first players turn");
+scanf("%d",&f_player1);
+if(f_player1==10){
+    D1=1;
+}
+if(f_player1==11){
+    D2=1;
+}
+if(f_player1==12){
+    D3=1;
+}
+if(f_player1==13){
+    D4=1;
+}
+if(f_player1==14){
+    D5=1;
+}
+if(f_player1==15){
+    D6=1;
+}if(f_player1==16){
+    D7=1;
+}
+if(f_player1==17){
+    D8=1;
+}
+if(f_player1==18){
+    D9=1;
+}
+ if(D1==1&&D2==1&&D3==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D4==1&&D5==1&&D5==1){
+    printf("player 1 won");
+    goto end;
+    
+}
+if(D7==1&&D8==1&&D9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D1==1&&D4==1&&D7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D2==1&&D5==1&&D8==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D3==2&&D6==2&&D9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D1==2&&D2==2&&D3==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D4==2&&D5==2&&D5==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D7==2&&D8==2&&D9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D1==2&&D4==2&&D7==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D2==2&&D5==2&&D8==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D3==2&&D6==2&&D9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D1==1&&D5==1&&D9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D3==1&&D5==1&&D7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D1==2&&D5==2&&D9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D3==2&&D5==2&&D7==2){
+    printf("player 2 won");
+    goto end;
+}
+printf("second players turn");
+scanf("%d",&s_player1);
+if(s_player1==10){
+    D1=2;
+}
+if(s_player1==11){
+    D2=2;
+}
+if(s_player1==12){
+    D3=2;
+}
+if(s_player1==13){
+    D4=2;
+}
+if(s_player1==14){
+    D5=2;
+}
+if(s_player1==15){
+    D6=2;
+}if(s_player1==16){
+    D7=2;
+}
+if(s_player1==17){
+    D8=2;
+}
+if(s_player1==18){
+    D9=2;
+}
+{
+    if(D1==1&&D2==1&&D3==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D4==1&&D5==1&&D5==1){
+    printf("player 1 won");
+    goto end;
+    
+}
+if(D7==1&&D8==1&&D9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D1==1&&D4==1&&D7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D2==1&&D5==1&&D8==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D3==2&&D6==2&&D9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D1==2&&D2==2&&D3==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D4==2&&D5==2&&D5==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D7==2&&D8==2&&D9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D1==2&&D4==2&&D7==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D2==2&&D5==2&&D8==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D3==2&&D6==2&&D9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D1==1&&D5==1&&D9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D3==1&&D5==1&&D7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(D1==2&&D5==2&&D9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(D3==2&&D5==2&&D7==2){
+    printf("player 2 won");
+    goto end;
+}
+       for(i=0;i<=9;i++){
+        for(j=0;j<=9;j++){
+        if(i==3||i==6){
+            printf("_");
+        }
+        if(j==1&&i==1){
+            printf("10=%d",D1);
+        }
+         if(j==4&&i==1){
+            printf("11=%d",D2);
+        }
+         if(j==7&&i==1){
+            printf("12=%d",D3);
+        }
+         if(j==1&&i==4){
+            printf("13=%d",D4);
+        }
+         if(j==4&&i==4){
+            printf("14=%d",D5);
+        }
+         if(j==7&&i==4){
+            printf("15=%d",D6);
+        }
+         if(j==1&&i==7){
+            printf("16=%d",D7);
+        }
+         if(j==4&&i==7){
+            printf("17=%d",D8);
+        }
+         if(j==7&&i==7){
+            printf("18=%d",D9);
+        }
+        if(j==3||j==6){
+            printf("|");
+        }
+        else{
+            printf("\t");
+        }
+        }
+        printf("\n");
+    }
+    
+}
+  if(D1!=0){
+    E1=D1;
+}
+if(D2!=0){
+    E2=D2;
+}
+if(D3!=0){
+    E3=D3;
+}
+if(D4!=0){
+    E4=D4;
+}
+if(D5!=0){
+    E5=D5;
+}
+if(D6!=0){
+    E6=D6;
+}
+if(D7!=0){
+    E7=D7;
+}
+if(D8!=0){
+    E8=D8;
+}
+if(D9!=0){
+    E9=D9;
+}
+        printf("first players turn");
+scanf("%d",&f_player1);
+if(f_player1==10){
+    E1=1;
+}
+if(f_player1==11){
+    E2=1;
+}
+if(f_player1==12){
+    E3=1;
+}
+if(f_player1==13){
+    E4=1;
+}
+if(f_player1==14){
+    E5=1;
+}
+if(f_player1==15){
+    E6=1;
+}if(f_player1==16){
+    E7=1;
+}
+if(f_player1==17){
+    E8=1;
+}
+if(f_player1==18){
+    E9=1;
+}
+{
+       for(i=0;i<=9;i++){
+        for(j=0;j<=9;j++){
+        if(i==3||i==6){
+            printf("_");
+        }
+        if(j==1&&i==1){
+            printf("10=%d",E1);
+        }
+         if(j==4&&i==1){
+            printf("11=%d",E2);
+        }
+         if(j==7&&i==1){
+            printf("12=%d",E3);
+        }
+         if(j==1&&i==4){
+            printf("13=%d",E4);
+        }
+         if(j==4&&i==4){
+            printf("14=%d",E5);
+        }
+         if(j==7&&i==4){
+            printf("15=%d",E6);
+        }
+         if(j==1&&i==7){
+            printf("16=%d",E7);
+        }
+         if(j==4&&i==7){
+            printf("17=%d",E8);
+        }
+         if(j==7&&i==7){
+            printf("18=%d",E9);
+        }
+        if(j==3||j==6){
+            printf("|");
+        }
+        else{
+            printf("\t");
+        }
+        }
+        printf("\n");
+    }
+    
+}
+
+
+
+{
+if(E1==1&&E2==1&&E3==1){
+    printf("player 1 won");
+    goto end;
+}
+if(E4==1&&E5==1&&E5==1){
+    printf("player 1 won");
+    goto end;
+}
+if(E7==1&&E8==1&&E9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(E1==1&&E4==1&&E7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(E2==1&&E5==1&&E8==1){
+    printf("player 1 won");
+    goto end;
+}
+if(E3==2&&E6==2&&E9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(E1==2&&E2==2&&E3==2){
+    printf("player 2 won");
+    goto end;
+if(E4==2&&E5==2&&E5==2){
+    printf("player 2 won");
+    goto end;
+}
+if(E7==2&&E8==2&&E9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(E1==2&&E4==2&&E7==2){
+    printf("player 2 won");
+    goto end;
+}
+if(E2==2&&E5==2&&E8==2){
+    printf("player 2 won");
+    goto end;
+}
+if(E3==2&&E6==2&&E9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(E1==1&&E5==1&&E9==1){
+    printf("player 1 won");
+    goto end;
+}
+if(E3==1&&E5==1&&E7==1){
+    printf("player 1 won");
+    goto end;
+}
+if(E1==2&&E5==2&&E9==2){
+    printf("player 2 won");
+    goto end;
+}
+if(E3==2&&E5==2&&E7==2){
+    printf("player 2 won");
+    goto end;
+}
+}
+end:
+}
+    
+}
+void main(){
+    tick_tac_to();
+}
